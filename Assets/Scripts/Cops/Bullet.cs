@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
 	{
 		float angle = transform.localEulerAngles.z;
 		
-		Debug.Log(angle + " rad " + MathLib.ToRadians(angle));
+		// Debug.Log(angle + " rad " + MathLib.ToRadians(angle));
 		
 		float xMult = (float)Math.Cos(MathLib.ToRadians(angle));
 		float yMult = (float)Math.Sin(MathLib.ToRadians(angle));
