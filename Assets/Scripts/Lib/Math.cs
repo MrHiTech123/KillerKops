@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,6 +22,11 @@ public class MathLib
 		return toReturn;
 		
 		
+	}
+	
+	public static double ToRadians(double degrees)
+	{
+		return degrees * Math.PI / 180.0;
 	}
 	
 	

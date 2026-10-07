@@ -12,10 +12,12 @@ public class Bullet : MonoBehaviour
 	
 	void HandleMovement()
 	{
-		float angle = transform.rotation.z;
+		float angle = transform.localEulerAngles.z;
 		
-		float xMult = (float)Math.Sin(angle);
-		float yMult = (float)Math.Cos(angle);
+		Debug.Log(angle + " rad " + MathLib.ToRadians(angle));
+		
+		float xMult = (float)Math.Cos(MathLib.ToRadians(angle));
+		float yMult = (float)Math.Sin(MathLib.ToRadians(angle));
 		
 		Vector2 movementDirection = Time.deltaTime * BULLET_SPEED * new Vector2(xMult, yMult);
 		
