@@ -12,6 +12,7 @@ public class Protestor : MonoBehaviour
 	public void Die()
 	{
 		CrowdBelongsTo.RemoveProtestor(this.CrowdCoordinates);
+		Destroy(this.gameObject);
 	}
 	
 }

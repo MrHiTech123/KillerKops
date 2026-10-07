@@ -37,6 +37,7 @@ public class Bullet : MonoBehaviour
 		{
 			Protestor protestor = other.GetComponent<Protestor>();
 			protestor.Die();
+			Destroy(this.gameObject);
 		}
 		else
 		{
