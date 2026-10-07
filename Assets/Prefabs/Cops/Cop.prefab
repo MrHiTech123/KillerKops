@@ -107,3 +107,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cop
   __secondsBetweenShots: 2
   BULLET_PREFAB: {fileID: 6719126913726228589, guid: d2155d0c8b8781948a2d969f1cf14531, type: 3}
+  __minTimeBetweenMovementChanges: 1
+  __maxTimeBetweenMovementChanges: 5
