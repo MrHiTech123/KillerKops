@@ -14,6 +14,8 @@ public class Crowd : MonoBehaviour
 	private int cols;
 	
 	private readonly Vector2 DISTANCE_BETWEEN_PROTESTORS = new Vector2(2, 2);
+	private readonly float CROWD_MOVEMENT_SPEED = 5f;
+	
 	List<Protestor> protestors = new List<Protestor>();
 	
 	Vector2 CorrectProtestorPosition(Coordinates coordinates)
@@ -96,21 +98,21 @@ public class Crowd : MonoBehaviour
 	
 	void ProcessPlayerInput()
 	{
-		if (Input.GetKey(KeyCode.DownArrow))
+		if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
 		{
-			transform.position += Vector3.down;
+			transform.position += Vector3.down * CROWD_MOVEMENT_SPEED * Time.deltaTime;
 		}
-		if (Input.GetKey(KeyCode.UpArrow))
+		if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
 		{
-			transform.position += Vector3.up;
+			transform.position += Vector3.up * CROWD_MOVEMENT_SPEED * Time.deltaTime;
 		}
-		if (Input.GetKey(KeyCode.LeftArrow))
+		if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
 		{
-			transform.position += Vector3.left;
+			transform.position += Vector3.left * CROWD_MOVEMENT_SPEED * Time.deltaTime;
 		}
-		if (Input.GetKey(KeyCode.RightArrow))
+		if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
 		{
-			transform.position += Vector3.right;
+			transform.position += Vector3.right * CROWD_MOVEMENT_SPEED * Time.deltaTime;
 		}
 		
 	}
