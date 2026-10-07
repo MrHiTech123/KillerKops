@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MathLib
 {
-	
 	public static List<int> factors(int n)
 	{
 		List<int> toReturn = new List<int>();
