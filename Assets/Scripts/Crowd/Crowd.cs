@@ -35,9 +35,7 @@ public class Crowd : MonoBehaviour
 		foreach (Protestor protestor in protestors) {
 			
 			Vector2 correctPosition = CorrectProtestorPosition(protestor.CrowdCoordinates);
-			
-			Debug.Log("Position correct: " + correctPosition.x + ", " + correctPosition.y);
-			
+						
 			protestor.transform.position = correctPosition;
 			
 			
@@ -75,8 +73,8 @@ public class Crowd : MonoBehaviour
 		
 		if (factors.Count % 2 == 0)
 		{
-			rows = factors[(factors.Count / 2) - 1];
-			cols = factors[factors.Count / 2];
+			cols = factors[(factors.Count / 2) - 1];
+			rows = factors[factors.Count / 2];
 		}
 		else
 		{
@@ -88,7 +86,6 @@ public class Crowd : MonoBehaviour
 			for (int c = 0; c < cols; ++c)
 			{
 				CreateProtestor(r, c);
-				Debug.Log("Creating protestor at (" + r + ", " + c + ")");
 			}
 		}
 		

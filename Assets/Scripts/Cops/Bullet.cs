@@ -30,12 +30,17 @@ public class Bullet : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D collision)
 	{
+		Debug.Log("Colliding");
 		GameObject other = collision.gameObject;
 		
 		if (UnityLib.HasComponent<Protestor>(other))
 		{
 			Protestor protestor = other.GetComponent<Protestor>();
 			protestor.Die();
+		}
+		else
+		{
+			Debug.Log("No Protestor");
 		}
 		
 	}
