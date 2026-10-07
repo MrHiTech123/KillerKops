@@ -52,13 +52,26 @@ public class Crowd : MonoBehaviour
 		
 		if (protestor == null) throw new System.Exception("Protestor prefab has no Protestor component");
 		
-		protestor.CrowdCoordinates = new Coordinates(row, col);
+		protestor.CrowdCoordinates = new Coordinates(col, row);
+		protestor.CrowdBelongsTo = this;
 		protestors.Add(protestor);
 		
 	}
+	
+	public void RemoveProtestor(Coordinates coordinatesToRemove)
+	{
+		foreach (Protestor protestor in protestors)
+		{
+			if (protestor.CrowdCoordinates.Equals(coordinatesToRemove))
+			{
+				protestors.Remove(protestor);
+				return;
+			}
+		}
+	}
 	void SpawnProtestors()
 	{
-		List<int> factors = Math.factors(numPeople);
+		List<int> factors = MathLib.factors(numPeople);
 		
 		if (factors.Count % 2 == 0)
 		{

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Math
+public class MathLib
 {
 	
 	public static List<int> factors(int n)
