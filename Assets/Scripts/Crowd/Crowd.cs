@@ -12,9 +12,7 @@ public class Crowd : MonoBehaviour
 	
 	private int rows;
 	private int cols;
-	
-	public static readonly Coordinates MAX_DIMENSIONS = new Coordinates(8, 8);
-	
+		
 	private readonly Vector2 DISTANCE_BETWEEN_PROTESTORS = new Vector2(2, 2);
 	private readonly float CROWD_MOVEMENT_SPEED = 5f;
 	
@@ -82,9 +80,9 @@ public class Crowd : MonoBehaviour
 	
 	public Coordinates FirstUnoccupiedLocation()
 	{
-		for (int col = 0; col < MAX_DIMENSIONS.col; ++col)
+		for (int col = 0; col < cols; ++col)
 		{
-			for (int row = 0; row < MAX_DIMENSIONS.row; ++row)
+			for (int row = 0; row < rows; ++row)
 			{
 				Coordinates toReturnCandidate = new Coordinates(col, row);
 				if (ProtestorAt(toReturnCandidate) == null)
