@@ -28,6 +28,11 @@ public class Coordinates
 		Coordinates other = (Coordinates)obj;
 		
 		return other.col == col && other.row == row;
+		
+	}
+	public override int GetHashCode()
+	{
+		return col + row;
 	}
 	
 }

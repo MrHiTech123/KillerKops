@@ -9,8 +9,13 @@ public class Spectator : MonoBehaviour
 	private TimeSpan timeSpentBeingConverted;
 	private static readonly TimeSpan CONVERSION_TIME = TimeSpan.FromSeconds(1);
 	
+	SpriteRenderer renderer;
 	private HashSet<GameObject> currentlyCollidedObjects = new HashSet<GameObject>();
-	
+
+	void Awake()
+	{
+		renderer = GetComponent<SpriteRenderer>();
+	}
 	Protestor TouchedProtestor()
 	{
 		foreach (GameObject gameObject in currentlyCollidedObjects)
@@ -39,6 +44,17 @@ public class Spectator : MonoBehaviour
 		Destroy(gameObject);
 	}
 	
+	double ConversionLerpValue()
+	{
+		Debug.Log("Spent time: " + timeSpentBeingConverted.TotalSeconds + " Total time: " + CONVERSION_TIME.TotalSeconds);
+		return timeSpentBeingConverted.TotalSeconds / CONVERSION_TIME.TotalSeconds;
+	}
+	void UpdateConversionColor()
+	{
+		renderer.color = Color.Lerp(Color.white, Color.red, (float)ConversionLerpValue());
+		Debug.Log(renderer.color);
+	}
+	
 	void UpdateConversion()
 	{
 		if (TouchingProtestor())
@@ -59,6 +75,8 @@ public class Spectator : MonoBehaviour
 		{
 			BeConvertedBy(TouchedProtestor());
 		}
+		
+		UpdateConversionColor();
 		
 	}
 	
