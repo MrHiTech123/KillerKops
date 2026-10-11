@@ -12,11 +12,14 @@ public class Cop : MonoBehaviour
 	{
 		TimeBetweenShots = TimeSpan.FromSeconds(__secondsBetweenShots);
 	}
-	
-	void ShootBullet()
+
+    
+
+    void ShootBullet()
 	{
 		GameObject bullet = Instantiate(BULLET_PREFAB, transform.position, transform.rotation);
 		TimeSinceLastShot = TimeSpan.FromSeconds(0);
+		SoundManager.Instance.GunShot(transform.position);
 	}
 	
 	void HandleShooting()
