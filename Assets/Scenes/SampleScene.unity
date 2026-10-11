@@ -570,7 +570,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3508462276870663330, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
       propertyPath: numPeople
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -774,6 +774,18 @@ PrefabInstance:
     - target: {fileID: 6432659681204911211, guid: 50b195f34bb7a57429435d68819608f8, type: 3}
       propertyPath: m_Name
       value: Spectator
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247541388716973171, guid: 50b195f34bb7a57429435d68819608f8, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247541388716973171, guid: 50b195f34bb7a57429435d68819608f8, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247541388716973171, guid: 50b195f34bb7a57429435d68819608f8, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
