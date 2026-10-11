@@ -44,9 +44,9 @@ public class Crowd : MonoBehaviour
 		
 	}
 	
-	public void CreateProtestor(Coordinates coordinates)
+	public void CreateProtestor(Coordinates coordinates, Vector3 startingPosition)
 	{
-		GameObject spawnedActor = Instantiate(PROTESTOR_PREFAB);
+		GameObject spawnedActor = Instantiate(PROTESTOR_PREFAB, startingPosition, Quaternion.identity);
 		Protestor protestor = spawnedActor.GetComponent<Protestor>();
 		
 		if (protestor == null) throw new System.Exception("Protestor prefab has no Protestor component");
@@ -57,7 +57,13 @@ public class Crowd : MonoBehaviour
 		
 	}
 	
-	public void CreateProtestorNear(Coordinates coordinates)
+	public void CreateProtestor(Coordinates coordinates)
+	{
+		Vector3 startingPosition = CorrectProtestorPosition(coordinates);
+		CreateProtestor(coordinates, startingPosition);
+	}
+	
+	public void CreateProtestorNear(Coordinates coordinates, Vector3 startingPosition)
 	{
 		foreach (Coordinates direction in MathLib.ORTHOGANAL_DIRECTIONS)
 		{

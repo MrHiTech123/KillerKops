@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Spectator : MonoBehaviour
 {
@@ -34,7 +35,8 @@ public class Spectator : MonoBehaviour
 	}
 	void BeConvertedBy(Protestor converter)
 	{
-		converter.Crowd.CreateProtestorNear(converter.CrowdCoordinates);
+		converter.Crowd.CreateProtestorNear(converter.CrowdCoordinates, transform.position);
+		Destroy(gameObject);
 	}
 	
 	void UpdateConversion()
