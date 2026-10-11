@@ -12,9 +12,9 @@ public class Crowd : MonoBehaviour
 	
 	private int rows;
 	private int cols;
-		
+	
 	private readonly Vector2 DISTANCE_BETWEEN_PROTESTORS = new Vector2(2, 2);
-	private readonly float CROWD_MOVEMENT_SPEED = 5f;
+	private readonly float CROWD_MOVEMENT_SPEED = 1f;
 	
 	List<Protestor> protestors = new List<Protestor>();
 	
@@ -46,6 +46,7 @@ public class Crowd : MonoBehaviour
 	
 	public void CreateProtestor(Coordinates coordinates, Vector3 startingPosition)
 	{
+		Debug.Log("Starting at " + startingPosition + " ending at " + CorrectProtestorPosition(coordinates));
 		GameObject spawnedActor = Instantiate(PROTESTOR_PREFAB, startingPosition, Quaternion.identity);
 		Protestor protestor = spawnedActor.GetComponent<Protestor>();
 		
@@ -70,7 +71,7 @@ public class Crowd : MonoBehaviour
 			Coordinates potentialCoordinates = new Coordinates(coordinates.col + direction.col, coordinates.row + direction.row);
 			if (ProtestorAt(potentialCoordinates) == null)
 			{
-				CreateProtestor(potentialCoordinates);
+				CreateProtestor(potentialCoordinates, startingPosition);
 				return;
 			}
 		}
