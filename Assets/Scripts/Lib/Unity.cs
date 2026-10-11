@@ -14,4 +14,21 @@ public class UnityLib
 			return true;
 		}
 	}
+	
+	void MoveAtSpeed(GameObject gameObject, float distanceToTravel, Vector3 destination)
+	{
+		Vector3 distanceToDestination = destination - gameObject.transform.position;
+		
+		if (distanceToDestination.magnitude < distanceToTravel)
+		{
+			gameObject.transform.position = destination;
+		}
+		
+		else
+		{
+			Vector3 toTravel = distanceToDestination.normalized * distanceToTravel;
+			gameObject.transform.position += toTravel;
+		}
+		
+	}
 }
