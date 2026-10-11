@@ -37,7 +37,7 @@ public class Crowd : MonoBehaviour
 			Vector2 correctPosition = CorrectProtestorPosition(protestor.CrowdCoordinates);
 			
 			
-			UnityLib.MoveAtSpeed(protestor.gameObject, CROWD_MOVEMENT_SPEED * 9/10, correctPosition);
+			UnityLib.MoveAtSpeed(protestor.gameObject, CROWD_MOVEMENT_SPEED, correctPosition);
 			
 			
 		}
@@ -163,22 +163,27 @@ public class Crowd : MonoBehaviour
 	
 	void ProcessPlayerInput()
 	{
+		Vector3 toMove = new Vector3(0, 0, 0);
 		if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
 		{
-			transform.position += Vector3.down * CROWD_MOVEMENT_SPEED * Time.deltaTime;
+			toMove += Vector3.down;
 		}
 		if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
 		{
-			transform.position += Vector3.up * CROWD_MOVEMENT_SPEED * Time.deltaTime;
+			toMove += Vector3.up;
 		}
 		if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
 		{
-			transform.position += Vector3.left * CROWD_MOVEMENT_SPEED * Time.deltaTime;
+			toMove += Vector3.left;
 		}
 		if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
 		{
-			transform.position += Vector3.right * CROWD_MOVEMENT_SPEED * Time.deltaTime;
+			toMove += Vector3.right;
 		}
+		
+		toMove = toMove.normalized * CROWD_MOVEMENT_SPEED * Time.deltaTime;
+		transform.position += toMove;
+		
 		
 	}
     // Update is called once per frame
