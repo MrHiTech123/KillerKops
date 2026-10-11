@@ -1,12 +1,12 @@
 public class Coordinates
 {
-	public int x {get; private set;}
-	public int y {get; private set;}
+	public int col {get; private set;}
+	public int row {get; private set;}
 	
-	public Coordinates(int x, int y)
+	public Coordinates(int col, int row)
 	{
-		this.x = x;
-		this.y = y;
+		this.col = col;
+		this.row = row;
 	}
 		
 	// override object.Equals
@@ -27,7 +27,7 @@ public class Coordinates
 		// TODO: write your implementation of Equals() here
 		Coordinates other = (Coordinates)obj;
 		
-		return other.x == x && other.y == y;
+		return other.col == col && other.row == row;
 	}
 	
 }

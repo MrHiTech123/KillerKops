@@ -13,6 +13,8 @@ public class Crowd : MonoBehaviour
 	private int rows;
 	private int cols;
 	
+	public static readonly Coordinates MAX_DIMENSIONS = new Coordinates(8, 8);
+	
 	private readonly Vector2 DISTANCE_BETWEEN_PROTESTORS = new Vector2(2, 2);
 	private readonly float CROWD_MOVEMENT_SPEED = 5f;
 	
@@ -24,8 +26,8 @@ public class Crowd : MonoBehaviour
 		float startingColXCoord = transform.position.x - (DISTANCE_BETWEEN_PROTESTORS.x * cols / 2);
 		
 		return new Vector2(
-			startingColXCoord + (DISTANCE_BETWEEN_PROTESTORS.x * coordinates.x),
-			startingRowYCoord + (DISTANCE_BETWEEN_PROTESTORS.y * coordinates.y)
+			startingColXCoord + (DISTANCE_BETWEEN_PROTESTORS.x * coordinates.col),
+			startingRowYCoord + (DISTANCE_BETWEEN_PROTESTORS.y * coordinates.row)
 		);
 		
 	}
@@ -35,37 +37,85 @@ public class Crowd : MonoBehaviour
 		foreach (Protestor protestor in protestors) {
 			
 			Vector2 correctPosition = CorrectProtestorPosition(protestor.CrowdCoordinates);
-						
-			protestor.transform.position = correctPosition;
+			
+			
+			UnityLib.MoveAtSpeed(protestor.gameObject, CROWD_MOVEMENT_SPEED * 9/10, correctPosition);
 			
 			
 		}
 		
 	}
 	
-	void CreateProtestor(int row, int col)
+	public void CreateProtestor(Coordinates coordinates)
 	{
 		GameObject spawnedActor = Instantiate(PROTESTOR_PREFAB);
 		Protestor protestor = spawnedActor.GetComponent<Protestor>();
 		
 		if (protestor == null) throw new System.Exception("Protestor prefab has no Protestor component");
 		
-		protestor.CrowdCoordinates = new Coordinates(col, row);
-		protestor.CrowdBelongsTo = this;
+		protestor.CrowdCoordinates = coordinates;
+		protestor.Crowd = this;
 		protestors.Add(protestor);
 		
 	}
 	
-	public void RemoveProtestor(Coordinates coordinatesToRemove)
+	public void CreateProtestorNear(Coordinates coordinates)
 	{
-		foreach (Protestor protestor in protestors)
+		foreach (Coordinates direction in MathLib.ORTHOGANAL_DIRECTIONS)
 		{
-			if (protestor.CrowdCoordinates.Equals(coordinatesToRemove))
+			Coordinates potentialCoordinates = new Coordinates(coordinates.col + direction.col, coordinates.row + direction.row);
+			if (ProtestorAt(potentialCoordinates) == null)
 			{
-				protestors.Remove(protestor);
+				CreateProtestor(potentialCoordinates);
 				return;
 			}
 		}
+		
+		Coordinates location = FirstUnoccupiedLocation();
+		if (location == null)
+		{
+			return;
+		}
+		CreateProtestor(location);
+		
+	}
+	
+	public Coordinates FirstUnoccupiedLocation()
+	{
+		for (int col = 0; col < MAX_DIMENSIONS.col; ++col)
+		{
+			for (int row = 0; row < MAX_DIMENSIONS.row; ++row)
+			{
+				Coordinates toReturnCandidate = new Coordinates(col, row);
+				if (ProtestorAt(toReturnCandidate) == null)
+				{
+					return toReturnCandidate;
+				}
+			}
+		}
+		return null;
+	}
+	
+	public Protestor ProtestorAt(Coordinates coordinates)
+	{
+		foreach (Protestor protestor in protestors)
+		{
+			if (protestor.CrowdCoordinates.Equals(coordinates))
+			{
+				return protestor;
+			}
+		}
+		return null;
+	}
+	
+	public void RemoveProtestor(Coordinates coordinatesToRemove)
+	{
+		Protestor toRemove = ProtestorAt(coordinatesToRemove);
+		if (toRemove == null)
+		{
+			return;
+		}
+		protestors.Remove(toRemove);
 	}
 	void SpawnProtestors()
 	{
@@ -85,7 +135,7 @@ public class Crowd : MonoBehaviour
 		{
 			for (int c = 0; c < cols; ++c)
 			{
-				CreateProtestor(r, c);
+				CreateProtestor(new Coordinates(c, r));
 			}
 		}
 		

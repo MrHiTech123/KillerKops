@@ -7,11 +7,11 @@ public class Protestor : MonoBehaviour
 	
 	public Coordinates CrowdCoordinates {get {return __crowdCoordinates;} set {__crowdCoordinates = value;}}
 	
-	public Crowd CrowdBelongsTo {get {return __crowdBelongsTo;} set {__crowdBelongsTo = value;}}
+	public Crowd Crowd {get {return __crowdBelongsTo;} set {__crowdBelongsTo = value;}}
 	
 	public void Die()
 	{
-		CrowdBelongsTo.RemoveProtestor(this.CrowdCoordinates);
+		Crowd.RemoveProtestor(this.CrowdCoordinates);
 		Destroy(this.gameObject);
 	}
 	
