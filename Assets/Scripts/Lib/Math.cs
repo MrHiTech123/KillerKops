@@ -36,5 +36,8 @@ public class MathLib
 		return degrees * Math.PI / 180.0;
 	}
 	
+	public static float Random() {
+		return UnityEngine.Random.Range(0.0f, 1.0f);
+	}
 	
 }
