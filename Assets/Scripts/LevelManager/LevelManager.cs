@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
 	
 	[SerializeField] private GameObject COP_PREFAB;
 	[SerializeField] private GameObject SPECTATOR_PREFAB;
+	[SerializeField] private GameObject TEAR_GAS_PREFAB;
 	
 	public static readonly List<TearGasData> ExistingTearGas = new List<TearGasData>();
 	
@@ -76,6 +77,7 @@ public class LevelManager : MonoBehaviour
 		Vector2 position = (Vector2)transform.position + MathLib.CoordinatesBetween(TEAR_GAS_SPAWNING_DIMENSIONS_START, TEAR_GAS_SPAWNING_DIMENSIONS_END);
 		TearGasData gas = new TearGasData(position, TEAR_GAS_DURATION);
 		ExistingTearGas.Add(gas);
+		Instantiate(TEAR_GAS_PREFAB, position, Quaternion.identity);
 	}
 	void UpdateSpawningTearGas()
 	{
