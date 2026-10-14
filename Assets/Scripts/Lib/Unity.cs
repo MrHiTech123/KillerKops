@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class UnityLib
@@ -15,9 +16,11 @@ public class UnityLib
 		}
 	}
 	
-	void MoveAtSpeed(GameObject gameObject, float distanceToTravel, Vector3 destination)
+	public static void MoveAtSpeed(GameObject gameObject, float speed, Vector3 destination)
 	{
 		Vector3 distanceToDestination = destination - gameObject.transform.position;
+		float distanceToTravel = speed * Time.deltaTime;
+		
 		
 		if (distanceToDestination.magnitude < distanceToTravel)
 		{
@@ -30,5 +33,10 @@ public class UnityLib
 			gameObject.transform.position += toTravel;
 		}
 		
+	}
+	
+	public static TimeSpan DeltaTimeSpan()
+	{
+		return TimeSpan.FromSeconds(Time.deltaTime);
 	}
 }

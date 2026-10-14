@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class MathLib
 {
+	public static readonly Coordinates[] ORTHOGANAL_DIRECTIONS =
+	{
+		new Coordinates(0, 1),
+		new Coordinates(1, 0),
+		new Coordinates(0, -1),
+		new Coordinates(-1, 0)
+	};
+	
 	public static List<int> factors(int n)
 	{
 		List<int> toReturn = new List<int>();
@@ -28,5 +36,8 @@ public class MathLib
 		return degrees * Math.PI / 180.0;
 	}
 	
+	public static float Random() {
+		return UnityEngine.Random.Range(0.0f, 1.0f);
+	}
 	
 }

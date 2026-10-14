@@ -81,7 +81,6 @@ public class Cop : MonoBehaviour
 	void HandleMovement()
 	{
 		TimeSinceLastMovementChange += TimeSpan.FromSeconds(Time.deltaTime);
-		Debug.Log(TimeSinceLastMovementChange.TotalSeconds + " since last | next " + TimeOfNextMovementChange.TotalSeconds);
 		if (TimeSinceLastMovementChange > TimeOfNextMovementChange)
 		{
 			SwitchDirections();

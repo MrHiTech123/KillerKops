@@ -14,7 +14,7 @@ public class Crowd : MonoBehaviour
 	private int cols;
 	
 	private readonly Vector2 DISTANCE_BETWEEN_PROTESTORS = new Vector2(2, 2);
-	private readonly float CROWD_MOVEMENT_SPEED = 5f;
+	private readonly float CROWD_MOVEMENT_SPEED = 1f;
 	
 	List<Protestor> protestors = new List<Protestor>();
 	
@@ -24,8 +24,8 @@ public class Crowd : MonoBehaviour
 		float startingColXCoord = transform.position.x - (DISTANCE_BETWEEN_PROTESTORS.x * cols / 2);
 		
 		return new Vector2(
-			startingColXCoord + (DISTANCE_BETWEEN_PROTESTORS.x * coordinates.x),
-			startingRowYCoord + (DISTANCE_BETWEEN_PROTESTORS.y * coordinates.y)
+			startingColXCoord + (DISTANCE_BETWEEN_PROTESTORS.x * coordinates.col),
+			startingRowYCoord + (DISTANCE_BETWEEN_PROTESTORS.y * coordinates.row)
 		);
 		
 	}
@@ -35,37 +35,92 @@ public class Crowd : MonoBehaviour
 		foreach (Protestor protestor in protestors) {
 			
 			Vector2 correctPosition = CorrectProtestorPosition(protestor.CrowdCoordinates);
-						
-			protestor.transform.position = correctPosition;
+			
+			
+			UnityLib.MoveAtSpeed(protestor.gameObject, CROWD_MOVEMENT_SPEED, correctPosition);
 			
 			
 		}
 		
 	}
 	
-	void CreateProtestor(int row, int col)
+	public void CreateProtestor(Coordinates coordinates, Vector3 startingPosition)
 	{
-		GameObject spawnedActor = Instantiate(PROTESTOR_PREFAB);
+		Debug.Log("Starting at " + startingPosition + " ending at " + CorrectProtestorPosition(coordinates));
+		GameObject spawnedActor = Instantiate(PROTESTOR_PREFAB, startingPosition, Quaternion.identity);
 		Protestor protestor = spawnedActor.GetComponent<Protestor>();
 		
 		if (protestor == null) throw new System.Exception("Protestor prefab has no Protestor component");
 		
-		protestor.CrowdCoordinates = new Coordinates(col, row);
-		protestor.CrowdBelongsTo = this;
+		protestor.CrowdCoordinates = coordinates;
+		protestor.Crowd = this;
 		protestors.Add(protestor);
 		
 	}
 	
-	public void RemoveProtestor(Coordinates coordinatesToRemove)
+	public void CreateProtestor(Coordinates coordinates)
 	{
-		foreach (Protestor protestor in protestors)
+		Vector3 startingPosition = CorrectProtestorPosition(coordinates);
+		CreateProtestor(coordinates, startingPosition);
+	}
+	
+	public void CreateProtestorNear(Coordinates coordinates, Vector3 startingPosition)
+	{
+		foreach (Coordinates direction in MathLib.ORTHOGANAL_DIRECTIONS)
 		{
-			if (protestor.CrowdCoordinates.Equals(coordinatesToRemove))
+			Coordinates potentialCoordinates = new Coordinates(coordinates.col + direction.col, coordinates.row + direction.row);
+			if (ProtestorAt(potentialCoordinates) == null)
 			{
-				protestors.Remove(protestor);
+				CreateProtestor(potentialCoordinates, startingPosition);
 				return;
 			}
 		}
+		
+		Coordinates location = FirstUnoccupiedLocation();
+		if (location == null)
+		{
+			return;
+		}
+		CreateProtestor(location);
+		
+	}
+	
+	public Coordinates FirstUnoccupiedLocation()
+	{
+		for (int col = 0; col < cols; ++col)
+		{
+			for (int row = 0; row < rows; ++row)
+			{
+				Coordinates toReturnCandidate = new Coordinates(col, row);
+				if (ProtestorAt(toReturnCandidate) == null)
+				{
+					return toReturnCandidate;
+				}
+			}
+		}
+		return null;
+	}
+	
+	public Protestor ProtestorAt(Coordinates coordinates)
+	{
+		foreach (Protestor protestor in protestors)
+		{
+			if (protestor.CrowdCoordinates.Equals(coordinates))
+			{
+				return protestor;
+			}
+		}
+		return null;
+	}
+	
+	public void RemoveProtestor(Coordinates coordinatesToRemove)
+	{
+		Protestor toRemove = ProtestorAt(coordinatesToRemove);
+		if (toRemove == null)
+		{
+			return;
+		}
+		protestors.Remove(toRemove);
 	}
 	void SpawnProtestors()
 	{
@@ -85,7 +140,7 @@ public class Crowd : MonoBehaviour
 		{
 			for (int c = 0; c < cols; ++c)
 			{
-				CreateProtestor(r, c);
+				CreateProtestor(new Coordinates(c, r));
 			}
 		}
 		
@@ -108,22 +163,27 @@ public class Crowd : MonoBehaviour
 	
 	void ProcessPlayerInput()
 	{
+		Vector3 toMove = new Vector3(0, 0, 0);
 		if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
 		{
-			transform.position += Vector3.down * CROWD_MOVEMENT_SPEED * Time.deltaTime;
+			toMove += Vector3.down;
 		}
 		if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
 		{
-			transform.position += Vector3.up * CROWD_MOVEMENT_SPEED * Time.deltaTime;
+			toMove += Vector3.up;
 		}
 		if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
 		{
-			transform.position += Vector3.left * CROWD_MOVEMENT_SPEED * Time.deltaTime;
+			toMove += Vector3.left;
 		}
 		if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
 		{
-			transform.position += Vector3.right * CROWD_MOVEMENT_SPEED * Time.deltaTime;
+			toMove += Vector3.right;
 		}
+		
+		toMove = toMove.normalized * CROWD_MOVEMENT_SPEED * Time.deltaTime;
+		transform.position += toMove;
+		
 		
 	}
     // Update is called once per frame
