@@ -147,7 +147,7 @@ public class Crowd : MonoBehaviour
 			
 			foreach (Coordinates direction in MathLib.ORTHOGANAL_DIRECTIONS)
 			{
-				Coordinates adjacentCandidate = new Coordinates(coordinates.col + direction.col, coordinates.row + direction.row);
+				Coordinates adjacentCandidate = new Coordinates(candidate.col + direction.col, candidate.row + direction.row);
 				if (alreadyVisited.Contains(adjacentCandidate))
 				{
 					continue;
