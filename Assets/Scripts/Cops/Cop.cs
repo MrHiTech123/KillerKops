@@ -44,10 +44,13 @@ public class Cop : MonoBehaviour
 	}
 
     
-
+	Quaternion RotationFromDirection()
+	{
+		return Quaternion.Euler(0, 0, -90);
+	}
     void ShootBullet()
 	{
-		GameObject bullet = Instantiate(BULLET_PREFAB, transform.position, transform.rotation);
+		GameObject bullet = Instantiate(BULLET_PREFAB, transform.position, RotationFromDirection());
 		TimeSinceLastShot = TimeSpan.FromSeconds(0);
 		SoundManager.Instance.GunShot(transform.position);
 	}
