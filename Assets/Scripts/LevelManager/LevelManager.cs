@@ -93,13 +93,18 @@ public class LevelManager : MonoBehaviour
 			SpawnTearGas();
 		}
 		
+		List<TearGasData> toRemove = new List<TearGasData>();
+		
 		foreach (TearGasData tearGas in ExistingTearGas)
 		{
 			tearGas.TimeExisted += TimeSpan.FromSeconds(Time.deltaTime);
 			if (tearGas.TimeExisted > tearGas.Duration)
 			{
-				ExistingTearGas.Remove(tearGas);
+				toRemove.Add(tearGas);
 			}
+		}
+		foreach (TearGasData tearGas in toRemove) {
+			ExistingTearGas.Remove(tearGas);
 		}
 		
 	}
