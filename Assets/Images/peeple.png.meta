@@ -135,19 +135,19 @@ TextureImporter:
       name: peeple_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 31
-        width: 6
-        height: 9
+        x: 0
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e783690e01a99a070800000000000000
+      spriteID: 2fb4cf033a52a2348a9e23a3dd71c3cc
       internalID: 8118189200590125182
       vertices: []
       indices: 
@@ -157,19 +157,19 @@ TextureImporter:
       name: peeple_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 23
-        width: 6
-        height: 9
+        x: 8
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4c2d660f271dd1d00800000000000000
+      spriteID: 09c41cf17c9dcbe4c85aa690de6657f9
       internalID: 945141788407419588
       vertices: []
       indices: 
@@ -179,19 +179,19 @@ TextureImporter:
       name: peeple_2
       rect:
         serializedVersion: 2
-        x: 9
-        y: 31
-        width: 6
-        height: 9
+        x: 16
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 09598311fad78fcd0800000000000000
+      spriteID: f8baef66926a7eb47b8f198ca69cf7a9
       internalID: -2524129400279493232
       vertices: []
       indices: 
@@ -201,19 +201,19 @@ TextureImporter:
       name: peeple_3
       rect:
         serializedVersion: 2
-        x: 9
-        y: 23
-        width: 6
-        height: 9
+        x: 24
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d44c919ea3df9ac50800000000000000
+      spriteID: d3af60dcf19766448bf036ad9f8d9c9d
       internalID: 6677146352014181453
       vertices: []
       indices: 
@@ -223,19 +223,19 @@ TextureImporter:
       name: peeple_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 31
-        width: 7
-        height: 9
+        x: 32
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f9ba8775590012130800000000000000
+      spriteID: ea1b11fd04536c8439c16377a870815b
       internalID: 3540111423507573663
       vertices: []
       indices: 
@@ -245,19 +245,19 @@ TextureImporter:
       name: peeple_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 23
-        width: 7
-        height: 9
+        x: 40
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8805f1b4cc733d320800000000000000
+      spriteID: 91032639e931de04587e41d66681c6c4
       internalID: 2581468361986625672
       vertices: []
       indices: 
@@ -267,19 +267,19 @@ TextureImporter:
       name: peeple_6
       rect:
         serializedVersion: 2
-        x: 23
-        y: 7
-        width: 9
-        height: 33
+        x: 48
+        y: 32
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b0d7a3323d6fb7490800000000000000
+      spriteID: 638f0e6c49c684549838090931bb4921
       internalID: -7747327347271238389
       vertices: []
       indices: 
@@ -290,18 +290,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 15
+        y: 24
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 08d778f3f3f1516a0800000000000000
+      spriteID: af4774d689ff5ba4b84b032c155135f0
       internalID: -6479238132393345664
       vertices: []
       indices: 
@@ -312,18 +312,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 8
-        y: 15
+        y: 24
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7ad25ff57faa871a0800000000000000
+      spriteID: e2f06567d3ab73f42816de26f8555b1e
       internalID: -6811506456954327641
       vertices: []
       indices: 
@@ -334,18 +334,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 15
+        y: 24
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 140bfb164fa12a880800000000000000
+      spriteID: 51781495afb4cf643bac7a3d59bc8f51
       internalID: -8601282701409931199
       vertices: []
       indices: 
@@ -355,20 +355,504 @@ TextureImporter:
       name: peeple_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 25
-        height: 13
+        x: 24
+        y: 24
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8f96321eb04092d20800000000000000
+      spriteID: 7794afb9ac273ea4a90493fddb5429ed
       internalID: 3254136654820239864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3395cad93e7170747b82304eea72ccd0
+      internalID: 1466915737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc33bea9a81cfa542909bb4d4a008c32
+      internalID: -1925311947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a00c3c0148b404a97927fb5f89cbc0
+      internalID: -81325275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57875b64ab4ea1d4eb7b4f40acb7e587
+      internalID: -1636713225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_15
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fdb04240d783d4b990ad4cdbd50302
+      internalID: 412799641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a63f32677347af47a53c85683785c14
+      internalID: -1896797106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_17
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a584afe38e3335f48af3a76048644013
+      internalID: 2111950422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a4e2e5803bb564884e80f7aaaf1f02
+      internalID: 1372576201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_19
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c870dfb63b7fc44acb8291edb259ce
+      internalID: 1458455853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2a773583c88634a8a6394ecc3a6a0e
+      internalID: -1582237063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6aa1f521e8322f448aacf30f14ebf15
+      internalID: 1194406236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_22
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2195e47306d34428c6c117651a880a
+      internalID: 6715648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_23
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd575b0e7c221b84a8057a572af4e9a3
+      internalID: 582302851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_24
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410d7983701d3764eb6647ac4a357356
+      internalID: -1248030367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958a0c04609f55345aeaf528d3cbee87
+      internalID: 347275303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_26
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4824c194b9511c41b43657d08f1eae6
+      internalID: 1766404099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed23376063d1a3843a0884e77511416e
+      internalID: 737618976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dabfd70371ba74d449c30e9fddd097e9
+      internalID: -1158912521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_29
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5e06ae7ac6edc47b3b828f0436cb23
+      internalID: 707109445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_30
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c640093b77ed2049a516f79ede9c430
+      internalID: -2133144819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_31
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62df52639ea7184a8934d4f79833de0
+      internalID: 950031106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peeple_32
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa79e5320daca4944bac14e640cee5d3
+      internalID: -376433341
       vertices: []
       indices: 
       edges: []
@@ -377,7 +861,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d6cb32423afea424895c6d2721079b7a
     internalID: 0
     vertices: []
     indices: 
@@ -385,13 +869,37 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":8.0,"y":8.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       peeple_0: 8118189200590125182
       peeple_1: 945141788407419588
       peeple_10: 3254136654820239864
+      peeple_11: 1466915737
+      peeple_12: -1925311947
+      peeple_13: -81325275
+      peeple_14: -1636713225
+      peeple_15: 412799641
+      peeple_16: -1896797106
+      peeple_17: 2111950422
+      peeple_18: 1372576201
+      peeple_19: 1458455853
       peeple_2: -2524129400279493232
+      peeple_20: -1582237063
+      peeple_21: 1194406236
+      peeple_22: 6715648
+      peeple_23: 582302851
+      peeple_24: -1248030367
+      peeple_25: 347275303
+      peeple_26: 1766404099
+      peeple_27: 737618976
+      peeple_28: -1158912521
+      peeple_29: 707109445
       peeple_3: 6677146352014181453
+      peeple_30: -2133144819
+      peeple_31: 950031106
+      peeple_32: -376433341
       peeple_4: 3540111423507573663
       peeple_5: 2581468361986625672
       peeple_6: -7747327347271238389

@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 public class Cop : MonoBehaviour
 {
-	[SerializeField] private float __secondsBetweenShots;
+	public float __secondsBetweenShots;
 	[SerializeField] private GameObject BULLET_PREFAB;
 	
 	private static readonly float MOVEMENT_SPEED = 1;
@@ -13,8 +13,8 @@ public class Cop : MonoBehaviour
 	private TimeSpan TimeSinceLastShot;
 	
 	
-	[SerializeField] private float __minTimeBetweenMovementChanges;
-	[SerializeField] private float __maxTimeBetweenMovementChanges;
+	public float __minTimeBetweenMovementChanges;
+	public float __maxTimeBetweenMovementChanges;
 	
 	private TimeSpan MIN_TIME_BETWEEN_MOVEMENT_CHANGES;
 	private TimeSpan MAX_TIME_BETWEEN_MOVEMENT_CHANGES;
@@ -44,10 +44,13 @@ public class Cop : MonoBehaviour
 	}
 
     
-
+	Quaternion RotationFromDirection()
+	{
+		return Quaternion.Euler(0, 0, -90);
+	}
     void ShootBullet()
 	{
-		GameObject bullet = Instantiate(BULLET_PREFAB, transform.position, transform.rotation);
+		GameObject bullet = Instantiate(BULLET_PREFAB, transform.position, RotationFromDirection());
 		TimeSinceLastShot = TimeSpan.FromSeconds(0);
 		SoundManager.Instance.GunShot(transform.position);
 	}
