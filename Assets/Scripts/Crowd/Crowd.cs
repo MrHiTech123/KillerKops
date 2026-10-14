@@ -14,7 +14,7 @@ public class Crowd : MonoBehaviour
 	private int cols;
 	
 	private readonly Vector2 DISTANCE_BETWEEN_PROTESTORS = new Vector2(2, 2);
-	private readonly float CROWD_MOVEMENT_SPEED = 1f;
+	private readonly float CROWD_MOVEMENT_SPEED = 2f;
 	
 	List<Protestor> protestors = new List<Protestor>();
 	
@@ -29,6 +29,22 @@ public class Crowd : MonoBehaviour
 		);
 		
 	}
+	
+	TearGasData NearbyTearGas()
+	{
+		TearGasData toReturn = null;
+		foreach (TearGasData tearGas in LevelManager.ExistingTearGas)
+		{
+			if (tearGas.Near(gameObject))
+			{
+				if (toReturn == null || toReturn.DistanceTo(gameObject) > tearGas.DistanceTo(gameObject))
+				{
+					toReturn = tearGas;
+				}
+			}
+		}
+		return toReturn;
+	}
 	void MoveAllProtestors()
 	{
 		
@@ -36,6 +52,14 @@ public class Crowd : MonoBehaviour
 			
 			Vector2 correctPosition = CorrectProtestorPosition(protestor.CrowdCoordinates);
 			
+			TearGasData nearbyGas = NearbyTearGas();
+			if (nearbyGas != null)
+			{
+				Vector3 distanceFromNearbyGas = transform.position - (Vector3)nearbyGas.position;
+				Vector3 distanceToMoveAway = distanceFromNearbyGas.normalized * TearGasData.DISTANCE_THRESHOLD;
+				correctPosition = transform.position + distanceToMoveAway;
+				
+			}
 			
 			UnityLib.MoveAtSpeed(protestor.gameObject, CROWD_MOVEMENT_SPEED, correctPosition);
 			

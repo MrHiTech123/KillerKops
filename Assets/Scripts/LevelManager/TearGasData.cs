@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TearGasData
 {
+	public static readonly float DISTANCE_THRESHOLD = 1;
 	public Vector2 position;
 	
 	public TimeSpan TimeExisted {get; private set;} = TimeSpan.Zero;
@@ -14,6 +15,21 @@ public class TearGasData
 	{
 		this.position = position;
 		this.Duration = TimeSpan.FromSeconds(duration);
+	}
+	
+	public float DistanceTo(GameObject gameObject)
+	{
+		return ((Vector2)gameObject.transform.position - this.position).magnitude;
+	}
+	public bool Near(GameObject gameObject)
+	{
+		
+		if (DistanceTo(gameObject) < DISTANCE_THRESHOLD)
+		{
+			return true;
+		}
+		
+		return false;
 	}
 	
 }
