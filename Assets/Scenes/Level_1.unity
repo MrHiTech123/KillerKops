@@ -663,12 +663,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7683883252211802983, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: m_Volume
-      value: 0.257
+      value: 0.208
       objectReference: {fileID: 0}
     - target: {fileID: 7683883252211802983, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 07234a33af96b404686d2f2decc5b237, type: 3}
+      objectReference: {fileID: 8300000, guid: c313a88caaf772f46b6c678c175c1df7, type: 3}
     - target: {fileID: 7683883252211802983, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
