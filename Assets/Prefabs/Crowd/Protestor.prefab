@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 4469913976391202178}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.60456, y: -0.00802, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,6 +106,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a8be699ec062a4ea654a4a7c657328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Protestor
+  __secondsBetweenShots: 3
+  BULLET_PREFAB: {fileID: 6719126913726228589, guid: d2155d0c8b8781948a2d969f1cf14531, type: 3}
+  SIGN_PROTESTOR: {fileID: -2524129400279493232, guid: 3e5bde2e5b2563941b0ba547dc39d9c7, type: 3}
+  GUN_PROTESTOR: {fileID: -7747327347271238389, guid: 3e5bde2e5b2563941b0ba547dc39d9c7, type: 3}
 --- !u!61 &-3449644593343543853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,11 +148,11 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.08, y: 0.08}
+    oldSize: {x: 1.1428572, y: 1.1428572}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.05, y: 0.1}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0

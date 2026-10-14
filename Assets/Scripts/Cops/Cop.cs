@@ -42,6 +42,11 @@ public class Cop : MonoBehaviour
 		
 		ResetMovemementChange();
 	}
+	
+	public void Die()
+	{
+		Destroy(this.gameObject);
+	}
 
     
 	Quaternion RotationFromDirection()
