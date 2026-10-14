@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MathLib
+public static class MathLib
 {
+	
 	public static readonly Coordinates[] ORTHOGANAL_DIRECTIONS =
 	{
 		new Coordinates(0, 1),
@@ -48,5 +49,20 @@ public class MathLib
 		);
 		
 	}
+	
+	public static bool IsBetween(float needle, float bound1, float bound2)
+	{
+		return (
+			((needle <= bound1) && (needle >= bound2)) ||
+			((needle >= bound1) && (needle <= bound2))
+		);
+	}
+	public static bool CoordinatesInBoundingBox(Vector2 coordinates, Vector2 boundingBoxOneCorner, Vector2 boundingBoxOppositeCorner)
+	{
+		return IsBetween(coordinates.x, boundingBoxOneCorner.x, boundingBoxOppositeCorner.x) &&
+			IsBetween(coordinates.y, boundingBoxOneCorner.y, boundingBoxOppositeCorner.y);
+		
+	}
+	
 	
 }
