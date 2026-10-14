@@ -57,9 +57,9 @@ public class Crowd : MonoBehaviour
 			TearGasData nearbyGas = NearbyTearGas(protestor);
 			if (nearbyGas != null)
 			{
-				Vector3 distanceFromNearbyGas = transform.position - (Vector3)nearbyGas.position;
+				Vector3 distanceFromNearbyGas = protestor.transform.position - (Vector3)nearbyGas.position;
 				Vector3 distanceToMoveAway = distanceFromNearbyGas.normalized * TearGasData.DISTANCE_THRESHOLD;
-				correctPosition = transform.position + distanceToMoveAway;
+				correctPosition = protestor.transform.position + distanceToMoveAway;
 				
 			}
 			
