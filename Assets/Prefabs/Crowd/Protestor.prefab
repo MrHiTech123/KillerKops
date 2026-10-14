@@ -106,8 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a8be699ec062a4ea654a4a7c657328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Protestor
-  __secondsBetweenShots: 0
-  BULLET_PREFAB: {fileID: 0}
+  __secondsBetweenShots: 3
+  BULLET_PREFAB: {fileID: 6719126913726228589, guid: d2155d0c8b8781948a2d969f1cf14531, type: 3}
   SIGN_PROTESTOR: {fileID: -2524129400279493232, guid: 3e5bde2e5b2563941b0ba547dc39d9c7, type: 3}
   GUN_PROTESTOR: {fileID: -7747327347271238389, guid: 3e5bde2e5b2563941b0ba547dc39d9c7, type: 3}
 --- !u!61 &-3449644593343543853

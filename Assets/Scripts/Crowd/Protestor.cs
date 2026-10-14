@@ -59,6 +59,7 @@ public class Protestor : MonoBehaviour
 	
 	void HandleShooting()
 	{
+		Debug.Log("Time since last " + TimeSinceLastShot.TotalSeconds);
 		TimeSinceLastShot += TimeSpan.FromSeconds(Time.deltaTime);
 		
 		if (TimeSinceLastShot > TimeBetweenShots)
@@ -77,7 +78,7 @@ public class Protestor : MonoBehaviour
 	}
 	public void Update()
 	{
-		
+		UpdateGun();
 	}
 
 }
