@@ -158,7 +158,7 @@ public class Crowd : MonoBehaviour
 		{
 			return;
 		}
-		CreateProtestor(location);
+		CreateProtestor(location, startingPosition);
 		
 	}
 	
