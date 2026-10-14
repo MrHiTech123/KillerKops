@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class FadeImge : MonoBehaviour
 {
     [SerializeField] private Image image;
+    [SerializeField] private FadeText text;
     [SerializeField] private float fadeTimeMax = 3f;
     float fadeTimer = 0f;
     public bool fadeIn = false;
@@ -41,7 +42,11 @@ public class FadeImge : MonoBehaviour
             Color c = image.color;
             c.a = (fadeTimeMax-fadeTimer)/fadeTimeMax; 
             image.color = c;
-            if (fadeTimer>=fadeTimeMax) fadeOut = false;
+            if (fadeTimer>=fadeTimeMax) 
+            {
+                if(text != null) text.FadeOut();
+                fadeOut = false;
+            }
         }
         if(fadeIn)
         {
@@ -49,7 +54,10 @@ public class FadeImge : MonoBehaviour
             Color c = image.color;
             c.a = fadeTimer/fadeTimeMax; 
             image.color = c;
-            if (fadeTimer>=fadeTimeMax) fadeOut = false;
+            if (fadeTimer>=fadeTimeMax) {
+                if(text != null) text.FadeIn();
+                fadeOut = false;
+            }
         }
     }
 }
