@@ -256,6 +256,63 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1001 &1008986202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.05507028
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.947496
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910243641332761435, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_Name
+      value: Crowd
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
 --- !u!1 &1017761174
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,15 +505,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: levelStarted
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: COPS_CAN_SHOOT
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: COP_SPAWN_RATE
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: TEAR_GAS_SPAWN_RATE
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: PROTESTORS_HAVE_GUNS
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: SPECTATOR_SPAWN_RATE
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1818848653488397502, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: m_Name
@@ -516,7 +585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8883276884208678136, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: levelTimer
-      value: 64
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8883276884208678136, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: levelStarted
@@ -613,7 +682,7 @@ Transform:
   m_GameObject: {fileID: 1568088218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.20276654, y: -0.37833786, z: 0}
+  m_LocalPosition: {x: -0.20276654, y: -0.37833786, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -776,3 +845,4 @@ SceneRoots:
   - {fileID: 1184445312}
   - {fileID: 1746112854}
   - {fileID: 1568088220}
+  - {fileID: 1008986202}
