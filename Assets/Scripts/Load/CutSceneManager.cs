@@ -14,9 +14,9 @@ public class CutsceneManager : MonoBehaviour
         cutsceneUI.SetActive(true);
 
         videoPlayer.loopPointReached += OnVideoFinished;
-        videoPlayer.prepareCompleted += OnVideoPrepared;
+        
 
-        videoPlayer.Prepare();
+        videoPlayer.Play();
     }
 
     private void OnVideoFinished(VideoPlayer player)
@@ -28,11 +28,7 @@ public class CutsceneManager : MonoBehaviour
         worldTimer.levelStarted = true;
 
         videoPlayer.loopPointReached -= OnVideoFinished;
-        videoPlayer.prepareCompleted -= OnVideoPrepared;
     }
 
-    private void OnVideoPrepared(VideoPlayer player)
-    {
-        player.Play();
-    }
+    
 }

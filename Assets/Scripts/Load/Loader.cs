@@ -11,6 +11,7 @@ public static class Loader
         Level_2,
         Level_3,
         Level_4,
+        Final_Scene,
         LoadingScene,
     }
     public static void Load(Scene targetScene)
