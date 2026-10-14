@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 443efe5e88dc15b45b771e19438199a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Crowd
-  numPeople: 10
+  numPeople: -1
   PROTESTOR_PREFAB: {fileID: 4469913976391202178, guid: 7dce049c09489db4f86b073f7f060e9a, type: 3}

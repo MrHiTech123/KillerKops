@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Unity.IO.LowLevel.Unsafe;
 using Unity.VisualScripting;
@@ -9,6 +10,8 @@ public class Crowd : MonoBehaviour
 {
 	
 	[SerializeField] private int numPeople;
+	
+	private static int numPeopleCarriedOver = -1;
 	
 	[SerializeField] GameObject PROTESTOR_PREFAB;
 	
@@ -46,6 +49,11 @@ public class Crowd : MonoBehaviour
 			}
 		}
 		return toReturn;
+	}
+	
+	public void OnDestroy()
+	{
+		numPeopleCarriedOver = protestors.Count;
 	}
 	void MoveAllProtestors()
 	{
@@ -201,6 +209,13 @@ public class Crowd : MonoBehaviour
 	}
 	void SpawnProtestors()
 	{
+		if (numPeopleCarriedOver != -1 && numPeople == -1)
+		{
+			numPeople = numPeopleCarriedOver;
+		}
+		
+		if (numPeople % 2 == 1) --numPeople;
+		
 		List<int> factors = MathLib.factors(numPeople);
 		
 		if (factors.Count % 2 == 0)
@@ -212,6 +227,7 @@ public class Crowd : MonoBehaviour
 		{
 			rows = cols = factors[factors.Count / 2];
 		}
+		
 		
 		for (int r = 0; r < rows; ++r)
 		{

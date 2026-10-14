@@ -53,6 +53,7 @@ public class LevelManager : MonoBehaviour
 	public bool levelStarted = false;
 	void SpawnCop()
 	{
+		Debug.Log("Spawning cop (or trying to anyway)");
 		Vector2 spawnCoordinates = (Vector2)transform.position + MathLib.CoordinatesBetween(COP_SPAWNING_DIMENSIONS_START, COP_SPAWNING_DIMENSIONS_END);
 		Instantiate(COP_PREFAB, spawnCoordinates, Quaternion.identity);
 	}
