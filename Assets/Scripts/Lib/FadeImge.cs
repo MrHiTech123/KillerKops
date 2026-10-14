@@ -6,8 +6,8 @@ public class FadeImge : MonoBehaviour
     [SerializeField] private Image image;
     [SerializeField] private float fadeTimeMax = 3f;
     float fadeTimer = 0f;
-    bool fadeIn = false;
-    bool fadeOut = false;
+    public bool fadeIn = false;
+    public bool fadeOut = false;
 
     
     void Start()
@@ -22,7 +22,6 @@ public class FadeImge : MonoBehaviour
         Color c = image.color;
         c.a = 0f; 
         image.color = c;
-        fadeIn = true;
     }
 
     public void FadeOut()
@@ -39,7 +38,18 @@ public class FadeImge : MonoBehaviour
         if(fadeOut)
         {
             fadeTimer += Time.deltaTime;
-            
+            Color c = image.color;
+            c.a = (fadeTimeMax-fadeTimer)/fadeTimeMax; 
+            image.color = c;
+            if (fadeTimer>=fadeTimeMax) fadeOut = false;
+        }
+        if(fadeIn)
+        {
+            fadeTimer += Time.deltaTime;
+            Color c = image.color;
+            c.a = fadeTimer/fadeTimeMax; 
+            image.color = c;
+            if (fadeTimer>=fadeTimeMax) fadeOut = false;
         }
     }
 }
