@@ -33,6 +33,9 @@ public class LevelManager : MonoBehaviour
 	public static Vector2 CrowdMovementDimensionsEnd {get; private set;}
 	
 	[SerializeField] private bool PROTESTORS_HAVE_GUNS;
+	[SerializeField] private bool COPS_CAN_SHOOT;
+	
+	public static bool CopsCanShoot {get; private set;}
 	public static bool ProtestorsHaveGuns {get; private set;}
 
 	void Awake()
@@ -43,6 +46,7 @@ public class LevelManager : MonoBehaviour
 		CrowdMovementDimensionsEnd = CROWD_MOVEMENT_DIMENSIONS_END;
 		
 		ProtestorsHaveGuns = PROTESTORS_HAVE_GUNS;
+		CopsCanShoot = COPS_CAN_SHOOT;
 		
 	}
 

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.EventSystems;
 
 public class Cop : MonoBehaviour
@@ -62,6 +63,7 @@ public class Cop : MonoBehaviour
 	
 	void HandleShooting()
 	{
+		if (!LevelManager.CopsCanShoot) return;
 		TimeSinceLastShot += TimeSpan.FromSeconds(Time.deltaTime);
 		
 		if (TimeSinceLastShot > TimeBetweenShots)
