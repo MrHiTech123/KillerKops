@@ -40,4 +40,13 @@ public class MathLib
 		return UnityEngine.Random.Range(0.0f, 1.0f);
 	}
 	
+	public static Vector2 CoordinatesBetween(Vector2 oneCorner, Vector2 oppositeCorner)
+	{
+		return new Vector2(
+			UnityEngine.Random.Range(oneCorner.x, oppositeCorner.x),
+			UnityEngine.Random.Range(oneCorner.y, oppositeCorner.y)
+		);
+		
+	}
+	
 }
