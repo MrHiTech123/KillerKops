@@ -32,14 +32,14 @@ public class Crowd : MonoBehaviour
 		
 	}
 	
-	TearGasData NearbyTearGas()
+	TearGasData NearbyTearGas(Protestor protestor)
 	{
 		TearGasData toReturn = null;
 		foreach (TearGasData tearGas in LevelManager.ExistingTearGas)
 		{
-			if (tearGas.Near(gameObject))
+			if (tearGas.Near(protestor.gameObject))
 			{
-				if (toReturn == null || toReturn.DistanceTo(gameObject) > tearGas.DistanceTo(gameObject))
+				if (toReturn == null || toReturn.DistanceTo(protestor.gameObject) > tearGas.DistanceTo(protestor.gameObject))
 				{
 					toReturn = tearGas;
 				}
@@ -54,7 +54,7 @@ public class Crowd : MonoBehaviour
 			
 			Vector2 correctPosition = CorrectProtestorPosition(protestor.CrowdCoordinates);
 			
-			TearGasData nearbyGas = NearbyTearGas();
+			TearGasData nearbyGas = NearbyTearGas(protestor);
 			if (nearbyGas != null)
 			{
 				Vector3 distanceFromNearbyGas = transform.position - (Vector3)nearbyGas.position;

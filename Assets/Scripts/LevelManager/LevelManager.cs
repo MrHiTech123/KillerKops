@@ -91,14 +91,12 @@ public class LevelManager : MonoBehaviour
 		foreach (TearGasData tearGas in ExistingTearGas)
 		{
 			tearGas.TimeExisted += TimeSpan.FromSeconds(Time.deltaTime);
-			Debug.Log("Tear gas existed " + tearGas.TimeExisted.TotalSeconds + " out of " + tearGas.Duration.TotalSeconds);
 			if (tearGas.TimeExisted > tearGas.Duration)
 			{
 				ExistingTearGas.Remove(tearGas);
 			}
 		}
 		
-		Debug.Log("There is tear gas "+ ExistingTearGas.Count);
 	}
 	
 	void Update()

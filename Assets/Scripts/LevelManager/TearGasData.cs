@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TearGasData
 {
-	public static readonly float DISTANCE_THRESHOLD = 1;
+	public static readonly float DISTANCE_THRESHOLD = 3;
 	public Vector2 position;
 	
 	public TimeSpan TimeExisted = TimeSpan.Zero;
