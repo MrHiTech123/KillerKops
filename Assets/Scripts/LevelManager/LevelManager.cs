@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
@@ -31,6 +33,9 @@ public class LevelManager : MonoBehaviour
 	public static Vector2 CrowdMovementDimensionsEnd {get; private set;}
 	
 	[SerializeField] private bool PROTESTORS_HAVE_GUNS;
+	[SerializeField] private bool COPS_CAN_SHOOT;
+	
+	public static bool CopsCanShoot {get; private set;}
 	public static bool ProtestorsHaveGuns {get; private set;}
 
 	void Awake()
@@ -41,6 +46,7 @@ public class LevelManager : MonoBehaviour
 		CrowdMovementDimensionsEnd = CROWD_MOVEMENT_DIMENSIONS_END;
 		
 		ProtestorsHaveGuns = PROTESTORS_HAVE_GUNS;
+		CopsCanShoot = COPS_CAN_SHOOT;
 		
 	}
 
@@ -88,11 +94,13 @@ public class LevelManager : MonoBehaviour
 		
 		foreach (TearGasData tearGas in ExistingTearGas)
 		{
+			tearGas.TimeExisted += TimeSpan.FromSeconds(Time.deltaTime);
 			if (tearGas.TimeExisted > tearGas.Duration)
 			{
 				ExistingTearGas.Remove(tearGas);
 			}
 		}
+		
 	}
 	
 	void Update()

@@ -518,6 +518,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: COPS_CAN_SHOOT
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1818848653488397502, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: m_Name
       value: GameManager
