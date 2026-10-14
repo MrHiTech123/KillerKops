@@ -9,7 +9,7 @@ public enum BulletTargettingMode
 }
 public class Bullet : MonoBehaviour
 {
-	BulletTargettingMode targettingMode = BulletTargettingMode.PROTESTOR;
+	public BulletTargettingMode targettingMode = BulletTargettingMode.PROTESTOR;
 	
 	public static readonly float BULLET_SPEED = 10;
 	void Start()
