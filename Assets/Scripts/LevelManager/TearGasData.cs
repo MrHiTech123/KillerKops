@@ -8,7 +8,7 @@ public class TearGasData
 	public static readonly float DISTANCE_THRESHOLD = 1;
 	public Vector2 position;
 	
-	public TimeSpan TimeExisted {get; private set;} = TimeSpan.Zero;
+	public TimeSpan TimeExisted = TimeSpan.Zero;
 	public TimeSpan Duration {get; private set;} = TimeSpan.MaxValue;
 	
 	public TearGasData(Vector2 position, float duration)

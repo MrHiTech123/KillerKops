@@ -46,7 +46,6 @@ public class Spectator : MonoBehaviour
 	
 	double ConversionLerpValue()
 	{
-		Debug.Log("Spent time: " + timeSpentBeingConverted.TotalSeconds + " Total time: " + CONVERSION_TIME.TotalSeconds);
 		return timeSpentBeingConverted.TotalSeconds / CONVERSION_TIME.TotalSeconds;
 	}
 	void UpdateConversionColor()
