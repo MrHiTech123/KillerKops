@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour
 	
 	[SerializeField] private GameObject COP_PREFAB;
 	[SerializeField] private GameObject SPECTATOR_PREFAB;
-	
+	public bool levelStarted = false;
 	void SpawnCop()
 	{
 		Vector2 spawnCoordinates = new Vector2(
@@ -50,7 +50,9 @@ public class LevelManager : MonoBehaviour
 	
 	void Update()
 	{
-		UpdateSpawningCop();
-		UpdateSpawningSpectator();
+		if(levelStarted){
+			UpdateSpawningCop();
+			UpdateSpawningSpectator();
+		}
 	}
 }
