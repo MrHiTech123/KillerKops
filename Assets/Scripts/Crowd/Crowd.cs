@@ -54,6 +54,7 @@ public class Crowd : MonoBehaviour
 	public void OnDestroy()
 	{
 		numPeopleCarriedOver = protestors.Count;
+		if (numPeopleCarriedOver == 1) numPeopleCarriedOver = 2;
 	}
 	void MoveAllProtestors()
 	{
