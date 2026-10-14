@@ -22,10 +22,20 @@ public class LevelManager : MonoBehaviour
 	[SerializeField] private GameObject SPECTATOR_PREFAB;
 	
 	public static readonly List<TearGasData> ExistingTearGas = new List<TearGasData>();
+	
+	[SerializeField] private Vector2 CROWD_MOVEMENT_DIMENSIONS_START;
+	[SerializeField] private Vector2 CROWD_MOVEMENT_DIMENSIONS_END;
+	
+	public static Vector2 CrowdMovementDimensionsStart {get; private set;}
+	public static Vector2 CrowdMovementDimensionsEnd {get; private set;}
 
 	void Awake()
 	{
 		ExistingTearGas.Clear();
+		
+		CrowdMovementDimensionsStart = CROWD_MOVEMENT_DIMENSIONS_START;
+		CrowdMovementDimensionsEnd = CROWD_MOVEMENT_DIMENSIONS_END;
+		
 	}
 
 	public bool levelStarted = false;

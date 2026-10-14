@@ -61,6 +61,28 @@ public class Crowd : MonoBehaviour
 				
 			}
 			
+			if (correctPosition.x > LevelManager.CrowdMovementDimensionsEnd.x)
+			{
+				correctPosition.x = LevelManager.CrowdMovementDimensionsEnd.x;
+			}
+			
+			if (correctPosition.x < LevelManager.CrowdMovementDimensionsStart.x)
+			{
+				correctPosition.x = LevelManager.CrowdMovementDimensionsStart.x;
+			}
+			
+			if (correctPosition.y < LevelManager.CrowdMovementDimensionsEnd.y)
+			{
+				correctPosition.y = LevelManager.CrowdMovementDimensionsEnd.y;
+			}
+			
+			if (correctPosition.y > LevelManager.CrowdMovementDimensionsStart.y)
+			{
+				correctPosition.y = LevelManager.CrowdMovementDimensionsStart.y;
+			}
+			
+			
+			
 			UnityLib.MoveAtSpeed(protestor.gameObject, CROWD_MOVEMENT_SPEED, correctPosition);
 			
 			
