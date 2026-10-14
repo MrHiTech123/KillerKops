@@ -84,7 +84,8 @@ public class LevelManager : MonoBehaviour
 		Vector2 position = (Vector2)transform.position + MathLib.CoordinatesBetween(TEAR_GAS_SPAWNING_DIMENSIONS_START, TEAR_GAS_SPAWNING_DIMENSIONS_END);
 		TearGasData gas = new TearGasData(position, TEAR_GAS_DURATION);
 		ExistingTearGas.Add(gas);
-		Instantiate(TEAR_GAS_PREFAB, position, Quaternion.identity);
+		Instantiate(TEAR_GAS_PREFAB, position, Quaternion.identity);	
+		SoundManager.Instance.TearGas(position);
 	}
 	void UpdateSpawningTearGas()
 	{

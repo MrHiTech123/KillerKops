@@ -368,7 +368,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
   m_UseReflectionProbes: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -450,6 +450,10 @@ PrefabInstance:
       propertyPath: numPeople
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4350039301617207334, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2054235757}
     - target: {fileID: 6861817406705914059, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.32309
@@ -499,6 +503,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+--- !u!114 &1330793647 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3508462276870663330, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+  m_PrefabInstance: {fileID: 1330793646}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443efe5e88dc15b45b771e19438199a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crowd
 --- !u!1001 &1773470208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -629,6 +644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2672238076352810420, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: crowd
+      value: 
+      objectReference: {fileID: 1330793647}
     - target: {fileID: 3874862075239211413, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -681,13 +700,17 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8519008572625746106, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: shoutCanvas
+      value: 
+      objectReference: {fileID: 2077846830}
     - target: {fileID: 8883276884208678136, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: nextScene
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8883276884208678136, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: levelTimer
-      value: 30
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 8883276884208678136, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: levelStarted
@@ -835,6 +858,11 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!224 &2077846830 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 611242287108272258, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+  m_PrefabInstance: {fileID: 1330793646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

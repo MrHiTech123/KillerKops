@@ -313,6 +313,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+--- !u!114 &1008986203 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3508462276870663330, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+  m_PrefabInstance: {fileID: 1008986202}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443efe5e88dc15b45b771e19438199a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crowd
+--- !u!224 &1008986204 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 611242287108272258, guid: a5814b38d3348084e9774189e299f7c8, type: 3}
+  m_PrefabInstance: {fileID: 1008986202}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1017761174
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: COP_SPAWN_RATE
-      value: 2
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: TEAR_GAS_SPAWN_RATE
@@ -525,12 +541,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: SPECTATOR_SPAWN_RATE
-      value: 0.5
+      value: 0.82
       objectReference: {fileID: 0}
     - target: {fileID: 1818848653488397502, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2672238076352810420, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: crowd
+      value: 
+      objectReference: {fileID: 1008986203}
     - target: {fileID: 3874862075239211413, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -579,13 +599,41 @@ PrefabInstance:
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 29debbe46555bef418d83c70529245f8, type: 3}
+    - target: {fileID: 8519008572625746106, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: shoutCanvas
+      value: 
+      objectReference: {fileID: 1008986204}
+    - target: {fileID: 8519008572625746106, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: 
+      objectReference: {fileID: 432918254220979158, guid: 44a0266d313d9504588a61d4c46dc9a9, type: 3}
+    - target: {fileID: 8519008572625746106, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: 
+      objectReference: {fileID: 432918254220979158, guid: 2021636b97645034eb323d3b5839491c, type: 3}
+    - target: {fileID: 8519008572625746106, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: 'lines.Array.data[2]'
+      value: 
+      objectReference: {fileID: 432918254220979158, guid: 009b44437caa8384fafa60ef50f48843, type: 3}
+    - target: {fileID: 8519008572625746106, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: 'lines.Array.data[3]'
+      value: 
+      objectReference: {fileID: 432918254220979158, guid: a6075a2b8bf9abd4aac2510ad5b4a22c, type: 3}
+    - target: {fileID: 8519008572625746106, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: 'lines.Array.data[4]'
+      value: 
+      objectReference: {fileID: 432918254220979158, guid: 2021636b97645034eb323d3b5839491c, type: 3}
+    - target: {fileID: 8519008572625746106, guid: 07279de6969179341a583ae52dbad39d, type: 3}
+      propertyPath: 'lines.Array.data[5]'
+      value: 
+      objectReference: {fileID: 432918254220979158, guid: 80c45cd484e21364a83740c39c5a3d2b, type: 3}
     - target: {fileID: 8883276884208678136, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: nextScene
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8883276884208678136, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: levelTimer
-      value: 30
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 8883276884208678136, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: levelStarted

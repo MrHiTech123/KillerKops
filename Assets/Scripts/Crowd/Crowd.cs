@@ -22,7 +22,10 @@ public class Crowd : MonoBehaviour
 	private readonly float CROWD_MOVEMENT_SPEED = 2f;
 	
 	List<Protestor> protestors = new List<Protestor>();
-	
+	public int getAmountProtesters()
+	{
+		return protestors.Count;
+	}
 	Vector2 CorrectProtestorPosition(Coordinates coordinates)
 	{
 		float startingRowYCoord = transform.position.y - (DISTANCE_BETWEEN_PROTESTORS.y * rows / 2);

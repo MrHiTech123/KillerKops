@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8883276884208678136}
   - component: {fileID: 7683883252211802983}
   - component: {fileID: -9190778713526802785}
+  - component: {fileID: 2672238076352810420}
+  - component: {fileID: 8519008572625746106}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -177,3 +179,37 @@ MonoBehaviour:
   PROTESTORS_HAVE_GUNS: 0
   COPS_CAN_SHOOT: 0
   levelStarted: 0
+--- !u!114 &2672238076352810420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818848653488397502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca00dc1e1a5f2354daadda1c18288d9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  crowd: {fileID: 0}
+--- !u!114 &8519008572625746106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818848653488397502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d988f47f69f2443b18150122b8b42d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  lines:
+  - {fileID: 432918254220979158, guid: 0f07dbc8e6cbb0c448675e3202bd387c, type: 3}
+  - {fileID: 432918254220979158, guid: 5cb2ba6bc0b913d4fbab92b6efa9c43a, type: 3}
+  - {fileID: 432918254220979158, guid: 5e7e89182e5b48f4dbaaff477ff6e56e, type: 3}
+  - {fileID: 432918254220979158, guid: 80c45cd484e21364a83740c39c5a3d2b, type: 3}
+  - {fileID: 432918254220979158, guid: dc56d2e702f86934d95cb0374cd3c7c7, type: 3}
+  - {fileID: 432918254220979158, guid: c430dd43a7e5fce40972fdc8d7d10746, type: 3}
+  - {fileID: 432918254220979158, guid: 2ad77921cf8b5eb43945568678a2d4d7, type: 3}
+  shoutCanvas: {fileID: 0}

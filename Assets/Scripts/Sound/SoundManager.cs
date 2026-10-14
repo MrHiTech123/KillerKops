@@ -19,7 +19,7 @@ public class SoundManager : MonoBehaviour
 
     public void TearGas(Vector3 position)
     {
-        PlaySound(audioClips.tearGas, position, 1f);
+        PlaySound(audioClips.tearGas, position, .6f);
     }
 
     private void PlaySound(AudioClip audioClip, Vector3 position, float volumeMultiplier = 1f)
