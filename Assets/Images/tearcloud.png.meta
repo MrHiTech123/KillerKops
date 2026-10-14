@@ -1,2 +1,1133 @@
 fileFormatVersion: 2
-guid: f903bf8b1bd3b1447883ec735e1fd43e
+guid: c2b11b76b5d2c4f488e9ca5ff0f52e12
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8916993817443302113
+    second: tearcloud_0
+  - first:
+      213: -1013977002857880088
+    second: tearcloud_1
+  - first:
+      213: 6266992287642076314
+    second: tearcloud_2
+  - first:
+      213: -5810970988889825794
+    second: tearcloud_3
+  - first:
+      213: 2397401898215906906
+    second: tearcloud_4
+  - first:
+      213: -3274186402834248855
+    second: tearcloud_5
+  - first:
+      213: 6999736217636249605
+    second: tearcloud_6
+  - first:
+      213: -7753927927941088145
+    second: tearcloud_7
+  - first:
+      213: -4713448136405111650
+    second: tearcloud_8
+  - first:
+      213: 4839530583162002856
+    second: tearcloud_9
+  - first:
+      213: 2939033434971413531
+    second: tearcloud_10
+  - first:
+      213: -7647274449113701948
+    second: tearcloud_11
+  - first:
+      213: 213090574099207585
+    second: tearcloud_12
+  - first:
+      213: -4665068398563308920
+    second: tearcloud_13
+  - first:
+      213: -6575082388015185862
+    second: tearcloud_14
+  - first:
+      213: 8297106451617779649
+    second: tearcloud_15
+  - first:
+      213: 5761852577463716836
+    second: tearcloud_16
+  - first:
+      213: -8060405296570827920
+    second: tearcloud_17
+  - first:
+      213: 5322914366465626081
+    second: tearcloud_18
+  - first:
+      213: -5439838096289782938
+    second: tearcloud_19
+  - first:
+      213: 8076114100576535971
+    second: tearcloud_20
+  - first:
+      213: 2243326540615397
+    second: tearcloud_21
+  - first:
+      213: 6724466461194529533
+    second: tearcloud_22
+  - first:
+      213: -5062832755118796440
+    second: tearcloud_23
+  - first:
+      213: -210401426566952424
+    second: tearcloud_24
+  - first:
+      213: -3164709753302488533
+    second: tearcloud_25
+  - first:
+      213: -3488899903711470943
+    second: tearcloud_26
+  - first:
+      213: 756044479436835257
+    second: tearcloud_27
+  - first:
+      213: 6634209925344730766
+    second: tearcloud_28
+  - first:
+      213: -4193416072132112448
+    second: tearcloud_29
+  - first:
+      213: 2729303260366999890
+    second: tearcloud_30
+  - first:
+      213: -5946806543338213776
+    second: tearcloud_31
+  - first:
+      213: 9019483485190404186
+    second: tearcloud_32
+  - first:
+      213: 710058973154613048
+    second: tearcloud_33
+  - first:
+      213: 8287647733310159140
+    second: tearcloud_34
+  - first:
+      213: -5737894471787192918
+    second: tearcloud_35
+  - first:
+      213: -1450534235611375154
+    second: tearcloud_36
+  - first:
+      213: 5373250830897357704
+    second: tearcloud_37
+  - first:
+      213: -5755751230754272232
+    second: tearcloud_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tearcloud_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 60
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eaff09f1a68fbb70800000000000000
+      internalID: 8916993817443302113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 85
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5ad36c941ade1f0800000000000000
+      internalID: -1013977002857880088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 41
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94c40b1844d8f650800000000000000
+      internalID: 6266992287642076314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_3
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 84
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd1f176ca84b5fa0800000000000000
+      internalID: -5810970988889825794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 75
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e910f0358454120800000000000000
+      internalID: 2397401898215906906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 67
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b86a260d0cf82d0800000000000000
+      internalID: -3274186402834248855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 73
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50025a5f00f042160800000000000000
+      internalID: 6999736217636249605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_7
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 76
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c3711b1a3846490800000000000000
+      internalID: -7753927927941088145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_8
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 75
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ca85294e7769eb0800000000000000
+      internalID: -4713448136405111650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_9
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 57
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad9209ac67792340800000000000000
+      internalID: 4839530583162002856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_10
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 64
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c9772665b89c820800000000000000
+      internalID: 2939033434971413531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_11
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 64
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c128a0d76c6fd590800000000000000
+      internalID: -7647274449113701948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_12
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 60
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5da268fbc05f200800000000000000
+      internalID: 213090574099207585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_13
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 26
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88acbb21209524fb0800000000000000
+      internalID: -4665068398563308920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_14
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 35
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a308d65876d90c4a0800000000000000
+      internalID: -6575082388015185862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_15
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 24
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cf87489b5e352370800000000000000
+      internalID: 8297106451617779649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_16
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 40
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ebc4ef346636ff40800000000000000
+      internalID: 5761852577463716836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_17
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 26
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07bf730b610b32090800000000000000
+      internalID: -8060405296570827920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 37
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1efc10f0a6aced940800000000000000
+      internalID: 5322914366465626081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 34
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663a20ba210d184b0800000000000000
+      internalID: -5439838096289782938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a543624cfe141070800000000000000
+      internalID: 8076114100576535971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_21
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 26
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee81992b48f70000800000000000000
+      internalID: 2243326540615397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_22
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 39
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa27836e9a125d50800000000000000
+      internalID: 6724466461194529533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_23
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 36
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8619ee9ee643db9b0800000000000000
+      internalID: -5062832755118796440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 23
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81acd3d6401841df0800000000000000
+      internalID: -210401426566952424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_25
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 25
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ae0392f31b414d0800000000000000
+      internalID: -3164709753302488533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_26
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 25
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa1266c500f49fc0800000000000000
+      internalID: -3488899903711470943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_27
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 6
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b94a37c2720e7a00800000000000000
+      internalID: 756044479436835257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_28
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 22
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e1b8d07c2711c50800000000000000
+      internalID: 6634209925344730766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_29
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 28
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cfc621dc4efdc5c0800000000000000
+      internalID: -4193416072132112448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_30
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 8
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2519d76dade60e520800000000000000
+      internalID: 2729303260366999890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_31
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e6b54d4f2b87da0800000000000000
+      internalID: -5946806543338213776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_32
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 9
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58b6484174ab2d70800000000000000
+      internalID: 9019483485190404186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_33
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 17
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8379570cfd2aad900800000000000000
+      internalID: 710058973154613048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_34
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 16
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429f58f14b3a30370800000000000000
+      internalID: 8287647733310159140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_35
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 8
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad527ae067ee50b0800000000000000
+      internalID: -5737894471787192918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_36
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 9
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec957d74ccaaedbe0800000000000000
+      internalID: -1450534235611375154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_37
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 7
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883a5b8792f919a40800000000000000
+      internalID: 5373250830897357704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tearcloud_38
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ccf5b30c67f10b0800000000000000
+      internalID: -5755751230754272232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tearcloud_0: 8916993817443302113
+      tearcloud_1: -1013977002857880088
+      tearcloud_10: 2939033434971413531
+      tearcloud_11: -7647274449113701948
+      tearcloud_12: 213090574099207585
+      tearcloud_13: -4665068398563308920
+      tearcloud_14: -6575082388015185862
+      tearcloud_15: 8297106451617779649
+      tearcloud_16: 5761852577463716836
+      tearcloud_17: -8060405296570827920
+      tearcloud_18: 5322914366465626081
+      tearcloud_19: -5439838096289782938
+      tearcloud_2: 6266992287642076314
+      tearcloud_20: 8076114100576535971
+      tearcloud_21: 2243326540615397
+      tearcloud_22: 6724466461194529533
+      tearcloud_23: -5062832755118796440
+      tearcloud_24: -210401426566952424
+      tearcloud_25: -3164709753302488533
+      tearcloud_26: -3488899903711470943
+      tearcloud_27: 756044479436835257
+      tearcloud_28: 6634209925344730766
+      tearcloud_29: -4193416072132112448
+      tearcloud_3: -5810970988889825794
+      tearcloud_30: 2729303260366999890
+      tearcloud_31: -5946806543338213776
+      tearcloud_32: 9019483485190404186
+      tearcloud_33: 710058973154613048
+      tearcloud_34: 8287647733310159140
+      tearcloud_35: -5737894471787192918
+      tearcloud_36: -1450534235611375154
+      tearcloud_37: 5373250830897357704
+      tearcloud_38: -5755751230754272232
+      tearcloud_4: 2397401898215906906
+      tearcloud_5: -3274186402834248855
+      tearcloud_6: 6999736217636249605
+      tearcloud_7: -7753927927941088145
+      tearcloud_8: -4713448136405111650
+      tearcloud_9: 4839530583162002856
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

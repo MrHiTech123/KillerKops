@@ -27,7 +27,8 @@ public class LevelManager : MonoBehaviour
 	{
 		ExistingTearGas.Clear();
 	}
-	
+
+	public bool levelStarted = false;
 	void SpawnCop()
 	{
 		Vector2 spawnCoordinates = (Vector2)transform.position + MathLib.CoordinatesBetween(COP_SPAWNING_DIMENSIONS_START, COP_SPAWNING_DIMENSIONS_END);
@@ -79,8 +80,10 @@ public class LevelManager : MonoBehaviour
 	
 	void Update()
 	{
-		UpdateSpawningCop();
-		UpdateSpawningSpectator();
-		UpdateSpawningTearGas();
+		if(levelStarted){
+			UpdateSpawningCop();
+			UpdateSpawningSpectator();
+			UpdateSpawningTearGas();
+		}
 	}
 }
