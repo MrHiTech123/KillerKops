@@ -853,7 +853,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: levelStarted
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: COPS_CAN_SHOOT
@@ -977,11 +977,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8883276884208678136, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: levelTimer
-      value: 64.5
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8883276884208678136, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: levelStarted
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

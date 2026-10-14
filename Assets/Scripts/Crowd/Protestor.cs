@@ -22,6 +22,7 @@ public class Protestor : MonoBehaviour
 	void Awake()
 	{
 		TimeBetweenShots = TimeSpan.FromSeconds(__secondsBetweenShots);
+		TimeSinceLastShot = TimeSpan.FromSeconds(UnityEngine.Random.Range(0, __secondsBetweenShots));
 	}
 
 	void Start()
