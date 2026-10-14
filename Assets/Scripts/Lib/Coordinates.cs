@@ -10,6 +10,8 @@ public class Coordinates
 	}
 		
 	// override object.Equals
+	
+	
 	public override bool Equals(object obj)
 	{
 		//
@@ -30,6 +32,17 @@ public class Coordinates
 		return other.col == col && other.row == row;
 		
 	}
+	
+	public static bool operator ==(Coordinates c1, Coordinates c2)
+	{
+		if (ReferenceEquals(c1, c2)) return true;
+		else if (ReferenceEquals(c1, null)) return false;
+		else if (ReferenceEquals(c2, null)) return false;
+		else return c1.Equals(c2);
+	}
+	
+	public static bool operator !=(Coordinates obj1, Coordinates obj2) => !(obj1 == obj2);
+    
 	public override int GetHashCode()
 	{
 		return col + row;

@@ -1,7 +1,9 @@
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Utils;
 
 public class Crowd : MonoBehaviour
 {
@@ -110,19 +112,48 @@ public class Crowd : MonoBehaviour
 		CreateProtestor(coordinates, startingPosition);
 	}
 	
-	public void CreateProtestorNear(Coordinates coordinates, Vector3 startingPosition)
+	public Coordinates ClosestUnoccupiedCoordinatesNear(Coordinates coordinates, Vector3 startingPosition)
 	{
-		foreach (Coordinates direction in MathLib.ORTHOGANAL_DIRECTIONS)
+		HashSet<Coordinates> alreadyVisited = new HashSet<Coordinates>();
+		PriorityQueue<Coordinates, float> potentialCoordinates = new PriorityQueue<Coordinates, float>();
+		alreadyVisited.Add(coordinates);
+		potentialCoordinates.Enqueue(coordinates, 0);
+		
+		
+		int count = 0;
+		while (potentialCoordinates.Count > 0 && count < 100)
 		{
-			Coordinates potentialCoordinates = new Coordinates(coordinates.col + direction.col, coordinates.row + direction.row);
-			if (ProtestorAt(potentialCoordinates) == null)
+			++count;
+			Coordinates candidate = potentialCoordinates.Dequeue();
+			
+			Debug.Log(candidate.col + "," + candidate.row + " " + count);
+			
+			if (ProtestorAt(candidate) == null)
 			{
-				CreateProtestor(potentialCoordinates, startingPosition);
-				return;
+				return candidate;
+			}
+			
+			foreach (Coordinates direction in MathLib.ORTHOGANAL_DIRECTIONS)
+			{
+				Coordinates adjacentCandidate = new Coordinates(coordinates.col + direction.col, coordinates.row + direction.row);
+				if (alreadyVisited.Contains(adjacentCandidate))
+				{
+					continue;
+				}
+				alreadyVisited.Add(adjacentCandidate);
+				potentialCoordinates.Enqueue(adjacentCandidate, (CorrectProtestorPosition(adjacentCandidate) - (Vector2)startingPosition).magnitude);
 			}
 		}
+		return null;
+	}
+	
+	public void CreateProtestorNear(Coordinates coordinates, Vector3 startingPosition)
+	{
+		Coordinates location = ClosestUnoccupiedCoordinatesNear(coordinates, startingPosition);
 		
-		Coordinates location = FirstUnoccupiedLocation();
+		if (location == null) {
+			location = FirstUnoccupiedLocation();
+		}
 		if (location == null)
 		{
 			return;
