@@ -536,7 +536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -9190778713526802785, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: PROTESTORS_HAVE_GUNS
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1818848653488397502, guid: 07279de6969179341a583ae52dbad39d, type: 3}
       propertyPath: m_Name
