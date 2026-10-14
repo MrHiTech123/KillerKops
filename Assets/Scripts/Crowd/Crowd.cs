@@ -29,6 +29,22 @@ public class Crowd : MonoBehaviour
 		);
 		
 	}
+	
+	TearGasData NearbyTearGas()
+	{
+		TearGasData toReturn = null;
+		foreach (TearGasData tearGas in LevelManager.ExistingTearGas)
+		{
+			if (tearGas.Near(gameObject))
+			{
+				if (toReturn == null || toReturn.DistanceTo(gameObject) > tearGas.DistanceTo(gameObject))
+				{
+					toReturn = tearGas;
+				}
+			}
+		}
+		return toReturn;
+	}
 	void MoveAllProtestors()
 	{
 		
@@ -36,6 +52,14 @@ public class Crowd : MonoBehaviour
 			
 			Vector2 correctPosition = CorrectProtestorPosition(protestor.CrowdCoordinates);
 			
+			TearGasData nearbyGas = NearbyTearGas();
+			if (nearbyGas != null)
+			{
+				Vector3 distanceFromNearbyGas = transform.position - (Vector3)nearbyGas.position;
+				Vector3 distanceToMoveAway = distanceFromNearbyGas.normalized * TearGasData.DISTANCE_THRESHOLD;
+				correctPosition = transform.position + distanceToMoveAway;
+				
+			}
 			
 			UnityLib.MoveAtSpeed(protestor.gameObject, CROWD_MOVEMENT_SPEED, correctPosition);
 			
