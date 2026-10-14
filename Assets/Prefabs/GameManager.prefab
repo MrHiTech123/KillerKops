@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WorldTimer
   currentTimeInSeconds: 0
-  levelTimer: 5
+  levelTimer: 30
   nextScene: 1
   levelStarted: 0
 --- !u!82 &7683883252211802983
