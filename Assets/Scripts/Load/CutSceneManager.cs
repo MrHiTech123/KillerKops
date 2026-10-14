@@ -7,6 +7,7 @@ public class CutsceneManager : MonoBehaviour
     [SerializeField] private GameObject cutsceneUI;
     [SerializeField] private AudioSource levelAudio;
     [SerializeField] private LevelManager levelManager;
+    [SerializeField] private WorldTimer worldTimer;
 
     private void Start()
     {
@@ -24,6 +25,7 @@ public class CutsceneManager : MonoBehaviour
         cutsceneUI.SetActive(false);
         levelAudio.Play();
         levelManager.levelStarted = true;
+        worldTimer.levelStarted = true;
 
         videoPlayer.loopPointReached -= OnVideoFinished;
         videoPlayer.prepareCompleted -= OnVideoPrepared;
