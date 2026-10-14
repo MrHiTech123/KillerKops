@@ -14,7 +14,7 @@ public class Crowd : MonoBehaviour
 	private int cols;
 	
 	private readonly Vector2 DISTANCE_BETWEEN_PROTESTORS = new Vector2(2, 2);
-	private readonly float CROWD_MOVEMENT_SPEED = 1f;
+	private readonly float CROWD_MOVEMENT_SPEED = 2f;
 	
 	List<Protestor> protestors = new List<Protestor>();
 	
