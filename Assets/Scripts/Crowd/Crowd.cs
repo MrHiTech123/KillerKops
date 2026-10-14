@@ -211,7 +211,7 @@ public class Crowd : MonoBehaviour
 	{
 		if (numPeopleCarriedOver != -1 && numPeople == -1)
 		{
-			numPeople = Math.Max(numPeopleCarriedOver, 16);
+			numPeople = numPeopleCarriedOver;
 		}
 		
 		if (numPeople % 2 == 1) --numPeople;
