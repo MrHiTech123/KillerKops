@@ -1,8 +1,16 @@
 using System;
 using UnityEngine;
 
+
+public enum BulletTargettingMode
+{
+	PROTESTOR,
+	COP
+}
 public class Bullet : MonoBehaviour
 {
+	BulletTargettingMode targettingMode = BulletTargettingMode.PROTESTOR;
+	
 	public static readonly float BULLET_SPEED = 10;
 	void Start()
 	{
@@ -35,10 +43,16 @@ public class Bullet : MonoBehaviour
 		Debug.Log("Colliding");
 		GameObject other = collision.gameObject;
 		
-		if (UnityLib.HasComponent<Protestor>(other))
+		if (targettingMode == BulletTargettingMode.PROTESTOR && UnityLib.HasComponent<Protestor>(other))
 		{
 			Protestor protestor = other.GetComponent<Protestor>();
 			protestor.Die();
+			Destroy(this.gameObject);
+		}
+		if (targettingMode == BulletTargettingMode.COP && UnityLib.HasComponent<Cop>(other))
+		{
+			Cop cop = other.GetComponent<Cop>();
+			cop.Die();
 			Destroy(this.gameObject);
 		}
 		else
